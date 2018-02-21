@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 from textblob import TextBlob
+from os import environ
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix = "s.")
@@ -34,4 +35,4 @@ async def text(*arg):
 
 
 
-bot.run("NDE1OTEwNzMyOTA4MDY4ODc0.DW8zrA.PEDhp_3Cz5DDOBWx-NIThWVsSjQ")
+bot.run(environ.get("DISCORD_TOKEN"))
