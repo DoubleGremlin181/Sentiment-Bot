@@ -6,7 +6,7 @@ from os import environ
 
 Client = discord.Client()
 bot = commands.Bot(command_prefix = "s.")
-await bot.change_presence(game=discord.Game(name=="Say s.text"))
+await bot.change_presence(game=discord.Game(name="Say s.text"))
 
 @bot.event
 async def on_ready():
