@@ -23,7 +23,7 @@ async def text(*arg):
         await  bot.say("The statement is negative")
     elif(sent < -0.1):
         await  bot.say("The statement is slightly negative")
-    elif(sent > -0.1 and sent < 0.1):
+    elif(sent < 0.1):
         await  bot.say("The statement neutral")
     elif(sent< 0.5):
         await  bot.say("The statement is slightly positive")
